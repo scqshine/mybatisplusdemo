@@ -99,9 +99,9 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        //strategy.setSuperEntityClass("com.maolin.bootlink.common.BaseEntity");
+        //strategy.setSuperEntityClass("com.itjt.bootlink.common.BaseEntity");
         strategy.setEntityLombokModel(true);
-       // strategy.setSuperControllerClass("com.maolin.bootlink.entity.BaseController");
+       // strategy.setSuperControllerClass("com.itjt.bootlink.entity.BaseController");
         strategy.setInclude(scanner("表名"));
         //strategy.setSuperEntityColumns("category_id");
         strategy.setRestControllerStyle(true);

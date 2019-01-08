@@ -24,7 +24,6 @@ spring:
 mybatis-plus:
   mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: com.example.mybatisplusdemo.entity
-#  type-aliases-super-type: com.yixin.hydra.entity.BaseEntity
   global-config:
     refresh: true
     db-config:
@@ -32,7 +31,6 @@ mybatis-plus:
       id-type: uuid
       logic-delete-value: 1
       logic-not-delete-value: 0
-#      table-prefix: hydra_
       table-underline: true
   configuration:
     map-underscore-to-camel-case: true
