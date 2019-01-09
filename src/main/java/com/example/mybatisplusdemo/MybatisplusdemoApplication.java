@@ -11,6 +11,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableConfigurationProperties
 @MapperScan("com.example.mybatisplusdemo.mapper")
+@EnableCaching
+@EnableAsync
+@EnableScheduling
 public class MybatisplusdemoApplication {
 
     public static void main(String[] args) {
