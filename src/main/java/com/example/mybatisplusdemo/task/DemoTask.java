@@ -12,14 +12,14 @@ import org.springframework.scheduling.annotation.Scheduled;
 @Slf4j
 public class DemoTask {
 
-    @Scheduled(cron ="0/2 * * * * ?}")
+    @Scheduled(cron ="0/5 * * * * ?}")
     public void sayHelloTask(){
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
         log.info(String.format("定时方法%s执行了",methodName));
     }
 
 
-    @Scheduled(cron ="0/3 * * * * ?}")
+    @Scheduled(cron ="0/10 * * * * ?}")
     public void sayHelloTask2(){
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
         log.info(String.format("定时方法%s执行了",methodName));
